@@ -74,7 +74,7 @@ class PhysicsObject:
         # Apply Drag
         # F = drag_coefficient * velocity_mag^2 * unit_velocity
         acceleration = Vec2(0, 0)
-        if self.velocity.x != 1 or self.velocity.y != 0:
+        if self.velocity.x != 0 or self.velocity.y != 0:
             drag = 0.47
             velocity_mag = compute_magnitude(self.velocity)
             unit_velocity = normalize(self.velocity)
